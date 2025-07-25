@@ -90,7 +90,9 @@ a.btn {
   margin-bottom: 4px;
 }
 
-a.btn:hover {
+
+a.btn:hover 
+{
   background-color: hsl(75, 94%, 57%);
   color: black;
   transform: scale(1.02);
@@ -98,10 +100,20 @@ a.btn:hover {
   box-shadow: 0 8px 15px rgba(196, 248, 42, 0.3);
 }
 
+a.btn:focus {
+background-color: hsl(75, 94%, 57%);
+  color: black;
+  transform: scale(1.02);
+  transition: 0.1s ease 0.0001s;
+  box-shadow: 0 8px 15px rgba(196, 248, 42, 0.3);
+  outline: none;
+}
+
 a.footerlinks:hover,
 a.footerlinks:active,
 a.footerlinks:focus {
   color: aqua;
+  outline: none;
 }
 
 .footerlinks {
